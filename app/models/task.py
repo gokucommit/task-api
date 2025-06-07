@@ -1,9 +1,9 @@
 from sqlalchemy import Column, Integer, String, Boolean, DateTime
 from datetime import datetime
-from db.session import Base
+from app.db.session import Base
 
 class Task(Base):
-  __table_name__ = "tasks"
+  __tablename__ = "tasks"
   id = Column(Integer, primary_key=True, index=True)
   title = Column(String, index=True, nullable=False)
   description = Column(String, nullable=True)
