@@ -1,0 +1,5 @@
+fastapi
+uvicorn[standard]          # ASGI server
+sqlalchemy                 # ORM
+pydantic                   # Data validation
+python-dotenv              # For loading .env files (optional, but useful)
