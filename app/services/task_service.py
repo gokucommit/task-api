@@ -25,7 +25,7 @@ def update_task(db: Session, task_id: int, task_data: TaskUpdate):
   return task
 
 def delete_task(db: Session, task_id: int):
-  task = get_tasks_by_id(task_id)
+  task = get_tasks_by_id(db, task_id)
   if task:
     db.delete(task)
     db.commit()
